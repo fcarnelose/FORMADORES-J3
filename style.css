@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
 :root{
     --bg-color:#405D72;
-    --cor-primaria:#e7e2de;
+    --cor-primaria:#FFF8F3;
     --cor-secundaria: #F7E7DC;
     --cor-terceira:#758694;
     --font:"Nunito Sans", sans-serif;
@@ -64,4 +64,22 @@ footer{
     height: 3rem;
     margin-top: 2rem;
     font-family: var(--font-2);
+}
+
+.graficos-container{
+    margin: 5rem;
+}
+
+.graficos-container__texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor-secundaria) solid 3.5px;
+}
+
+span{
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(56, 187, 56);
+    font-family:cursive;
 }
