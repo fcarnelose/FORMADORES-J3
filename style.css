@@ -72,6 +72,7 @@ footer{
 
 .graficos-container__texto{
     font-size: 1.3rem;
+    justify-content: center;
     text-align: center;
     padding: 2rem;
     border: var(--cor-secundaria) solid 3.5px;
