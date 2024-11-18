@@ -84,3 +84,8 @@ span{
     color: rgb(56, 187, 56);
     font-family:cursive;
 }
+.grafico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
