@@ -5,7 +5,7 @@ const getCSS = (variavel) => {
 const tickConfig = {
     color: getCSS('--cor-primaria'),
     size: 16,
-    family: getCSS('font')
+    family: getCSS('font'),
 }
 
 

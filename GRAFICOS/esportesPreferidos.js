@@ -7,13 +7,27 @@ async function quantidadeUsuarios() {
   const nomeEsporte = Object.keys(dados)
   const quantidadeUsuarios = Object.values(dados)
 
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  
+  const colors = nomeEsporte.map(() => getRandomColor());
+
   const data = [
       {
         x: nomeEsporte,
         y: quantidadeUsuarios,
         type: 'bar',
         marker: {
-          color: getCSS('--cor-primaria')
+          color: colors,
+         
         }
       }
     ]
@@ -24,6 +38,7 @@ async function quantidadeUsuarios() {
 
       title : {
         text : "Esportes Preferidos em Todo o Mundo",
+        x:0,
         font: {
         family: getCSS('font'),  
         size: 30,
@@ -31,17 +46,17 @@ async function quantidadeUsuarios() {
         }
       },
       xaxis:{
-        tickFont:tickConfig,
+        tickfont:tickConfig,
         title:{
           text: "Nome dos Esportes",
           font:{
-            color: getCSS('--cor-secundaria'),
+            color: getCSS('--cor-primaria'),
             size: 20,
           }
         }
       },
       yaxis:{
-        tickFont:tickConfig,
+        tickfont:tickConfig,
         title:{
           text: "Bilhões de pessoas",
           font:{
